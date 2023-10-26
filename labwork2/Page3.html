@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Список достопримечательностей
+    </title>
+</head>
+
+<body>
+    <div>
+        <a href="Untitled-1.html">Самые посещаемые достопримечательности</a>
+        <br><a href="Page3.html">Список достопримечательностей</a>
+    </div>
+    <hr color="blue">
+    <details>
+        <summary>График</summary>
+        <table>
+            <tr>
+                <td>
+                    <form>
+                        <p><b>Значение по оси OX</b><br>
+                            <input type="radio" name="OX" value="first"> Город<br>
+                            <input type="radio" name="OX" value="second"> Страна<br>
+                            <input type="radio" name="OX" value="third"> Год занесения в ЮНЕСКО<br>
+                        </p>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <p><b>Результат</b><br>
+                            <input type="checkbox" name="result" value="first"> Максимальное кол-во туристов<br>
+                            <input type="checkbox" name="result" value="second"> Минимальное кол-во туристов<br>
+                            <input type="checkbox" name="result" value="third"> Кол-во достопримечательностей<br>
+                        </p>
+                    </form>
+
+                </td>
+            </tr>
+        </table>
+        <form>
+            <input type="button" value="Построить график">
+        </form>
+    </details>
+    <details>
+        <summary>Фильтр</summary>
+        <form>
+            <p>
+                <label>Название:
+                    <input type="text" name="name">
+                </label>
+            </p>
+            <p>
+                <label>Страна:
+                    <input type="text" name="country">
+                </label>
+            </p>
+            <p>
+                <label>Город:
+                    <input type="text" name="city">
+                </label>
+            </p>
+            <p>
+                <label>Год основания:
+                    от <input type="text" name="yearOT"> до <input type="text" name="yearDO">
+                </label>
+            </p>
+            <p>
+                <label>Год занесения в ЮНЕСКО:
+                    от <input type="text" name="yearOT"> до <input type="text" name="yearDO">
+                </label>
+            </p>
+            <p>
+                <label>Рейтинг:
+                    от <input type="number" name="ranting" min="1" max="10" step="0.1"> до <input type="number"
+                        name="ranting" min="1" max="10" step="0.1">
+                </label>
+            </p>
+            <input type="button" value="Найти">
+        </form>
+    </details>
+    <details>
+        <summary>Сортировка</summary>
+        <form>
+        <p>
+            Первый уровень:
+            <select name="Sort22">
+                <option value="0"> - </option>
+                <option value="1"> кол-во туристов </option>
+                <option value="2"> год основания </option>
+                <option value="3"> рейтинг </option>
+            </select>
+            по:
+            <select name="Sort11">
+                <option value="0"> возрастанию </option>
+                <option value="1"> убыванию </option>
+            </select>
+        </p>
+        <p>
+            Второй уровень:
+            <select name="Sort22">
+                <option value="0"> - </option>
+                <option value="1"> кол-во туристов </option>
+                <option value="2"> год основания </option>
+                <option value="3"> рейтинг </option>
+                
+            </select>
+            по:
+            <select name="Sort11">
+                <option value="0"> возрастанию </option>
+                <option value="1"> убыванию </option>
+            </select>
+        </p>
+        <p>
+            Третий уровень:
+            <select name="Sort22">
+                <option value="0"> - </option>
+                <option value="1"> кол-во туристов </option>
+                <option value="2"> год основания </option>
+                <option value="3"> рейтинг </option>
+            </select>
+            по:
+            <select name="Sort11">
+                <option value="0"> возрастанию </option>
+                <option value="1"> убыванию </option>
+            </select>
+        </p>
+        <input type="button" value="Сортировать">
+    </form>
+    </details>
+    <hr color="blue">
+    <table border="3">
+        <tr>
+            <th></th>
+            <th>Достопримечательность</th>
+            <th>Страна</th>
+            <th>Город</th>
+            <th>Год основания</th>
+            <th>Год занесения в ЮНЕСКО</th>
+            <th>Кол-во туристов за год</th>
+            <th>Рейтинг</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Великая Китайская Стена</td>
+            <td>Китай</td>
+            <td>Пекин</td>
+            <td>7 в. до н.э.</td>
+            <td>1987</td>
+            <td>10,000,000</td>
+            <td>9.5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Мачу-Пикчу</td>
+            <td>Перу</td>
+            <td>Агуас Кальентес</td>
+            <td>15 в.</td>
+            <td>1983</td>
+            <td>2,500,000</td>
+            <td>9.4</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Собор Святого Петра</td>
+            <td>Италия</td>
+            <td>Рим</td>
+            <td>1506</td>
+            <td>1984</td>
+            <td>4,000,000</td>
+            <td>9.3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Тадж-Махал</td>
+            <td>Индия</td>
+            <td>Агра</td>
+            <td>1632</td>
+            <td>1983</td>
+            <td>7,000,000</td>
+            <td>9.2</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Статуя Христа Спасителя</td>
+            <td>Бразилия</td>
+            <td>Рио-де-Жанейро</td>
+            <td>1931</td>
+            <td>2007</td>
+            <td>1,800,000</td>
+            <td>8.4</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Гранд-Каньон</td>
+            <td>США</td>
+            <td>Аризона</td>
+            <td>1919</td>
+            <td>1979</td>
+            <td>6,400,000</td>
+            <td>8.3</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Парфенон</td>
+            <td>Греция</td>
+            <td>Афины</td>
+            <td>5 в. до н.э.</td>
+            <td>1987</td>
+            <td>2,800,000</td>
+            <td>8.2</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Колизей</td>
+            <td>Италия</td>
+            <td>Рим</td>
+            <td>70 н.э.</td>
+            <td>1980</td>
+            <td>5,600,000</td>
+            <td>8.1</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Большой китайский мур</td>
+            <td>Китай</td>
+            <td>Разные</td>
+            <td>7 в. до н.э.</td>
+            <td>1987</td>
+            <td>10,200,000</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Пирамиды Гизы</td>
+            <td>Египет</td>
+            <td>Гиза</td>
+            <td>26 в. до н.э.</td>
+            <td>1979</td>
+            <td>14,000,000</td>
+            <td>9.1</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Статуя Свободы</td>
+            <td>США</td>
+            <td>Нью-Йорк</td>
+            <td>1886</td>
+            <td>1984</td>
+            <td>4,500,000</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Акрополь Афинский</td>
+            <td>Греция</td>
+            <td>Афины</td>
+            <td>5 в. до н.э.</td>
+            <td>1987</td>
+            <td>3,000,000</td>
+            <td>8.9</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Ватиканские музеи</td>
+            <td>Ватикан</td>
+            <td>Ватикан</td>
+            <td>16 в.</td>
+            <td>1984</td>
+            <td>6,500,000</td>
+            <td>8.8</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Сиднейская оперная театр</td>
+            <td>Австралия</td>
+            <td>Сидней</td>
+            <td>1973</td>
+            <td>2007</td>
+            <td>2,200,000</td>
+            <td>8.7</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Мона Лиза</td>
+            <td>Франция</td>
+            <td>Париж</td>
+            <td>16 в.</td>
+            <td>1987</td>
+            <td>6,000,000</td>
+            <td>8.6</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Эйфелева башня</td>
+            <td>Франция</td>
+            <td>Париж</td>
+            <td>1889</td>
+            <td>1987</td>
+            <td>7,200,000</td>
+            <td>8.5</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Монастырь Монсеррат</td>
+            <td>Испания</td>
+            <td>Барселона</td>
+            <td>1025</td>
+            <td>1997</td>
+            <td>1,600,000</td>
+            <td>7.9</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Колизей Верона</td>
+            <td>Италия</td>
+            <td>Верона</td>
+            <td>30 н.э.</td>
+            <td>2000</td>
+            <td>1,300,000</td>
+            <td>7.8</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Гуггенхайм-музей</td>
+            <td>США</td>
+            <td>Нью-Йорк</td>
+            <td>1959</td>
+            <td>1992</td>
+            <td>2,300,000</td>
+            <td>7.7</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Красная площадь</td>
+            <td>Россия</td>
+            <td>Москва</td>
+            <td>15 в.</td>
+            <td>1990</td>
+            <td>4,800,000</td>
+            <td>7.6</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Великая Китайская Стена</td>
+            <td>Китай</td>
+            <td>Пекин</td>
+            <td>7 в. до н.э.</td>
+            <td>1987</td>
+            <td>10,000,000</td>
+            <td>9.5</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Мачу-Пикчу</td>
+            <td>Перу</td>
+            <td>Агуас Кальентес</td>
+            <td>15 в.</td>
+            <td>1983</td>
+            <td>2,500,000</td>
+            <td>9.4</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Собор Святого Петра</td>
+            <td>Италия</td>
+            <td>Рим</td>
+            <td>1506</td>
+            <td>1984</td>
+            <td>4,000,000</td>
+            <td>9.3</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Тадж-Махал</td>
+            <td>Индия</td>
+            <td>Агра</td>
+            <td>1632</td>
+            <td>1983</td>
+            <td>7,000,000</td>
+            <td>9.2</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Статуя Христа Спасителя</td>
+            <td>Бразилия</td>
+            <td>Рио-де-Жанейро</td>
+            <td>1931</td>
+            <td>2007</td>
+            <td>1,800,000</td>
+            <td>8.4</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Гранд-Каньон</td>
+            <td>США</td>
+            <td>Аризона</td>
+            <td>1919</td>
+            <td>1979</td>
+            <td>6,400,000</td>
+            <td>8.3</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Парфенон</td>
+            <td>Греция</td>
+            <td>Афины</td>
+            <td>5 в. до н.э.</td>
+            <td>1987</td>
+            <td>2,800,000</td>
+            <td>8.2</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Колизей</td>
+            <td>Италия</td>
+            <td>Рим</td>
+            <td>70 н.э.</td>
+            <td>1980</td>
+            <td>5,600,000</td>
+            <td>8.1</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Большой китайский мур</td>
+            <td>Китай</td>
+            <td>Разные</td>
+            <td>7 в. до н.э.</td>
+            <td>1987</td>
+            <td>10,200,000</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Пирамиды Гизы</td>
+            <td>Египет</td>
+            <td>Гиза</td>
+            <td>26 в. до н.э.</td>
+            <td>1979</td>
+            <td>14,000,000</td>
+            <td>9.1</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Статуя Свободы</td>
+            <td>США</td>
+            <td>Нью-Йорк</td>
+            <td>1886</td>
+            <td>1984</td>
+            <td>4,500,000</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Акрополь Афинский</td>
+            <td>Греция</td>
+            <td>Афины</td>
+            <td>5 в. до н.э.</td>
+            <td>1987</td>
+            <td>3,000,000</td>
+            <td>8.9</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Ватиканские музеи</td>
+            <td>Ватикан</td>
+            <td>Ватикан</td>
+            <td>16 в.</td>
+            <td>1984</td>
+            <td>6,500,000</td>
+            <td>8.8</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Сиднейская оперная театр</td>
+            <td>Австралия</td>
+            <td>Сидней</td>
+            <td>1973</td>
+            <td>2007</td>
+            <td>2,200,000</td>
+            <td>8.7</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Мона Лиза</td>
+            <td>Франция</td>
+            <td>Париж</td>
+            <td>16 в.</td>
+            <td>1987</td>
+            <td>6,000,000</td>
+            <td>8.6</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Эйфелева башня</td>
+            <td>Франция</td>
+            <td>Париж</td>
+            <td>1889</td>
+            <td>1987</td>
+            <td>7,200,000</td>
+            <td>8.5</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Монастырь Монсеррат</td>
+            <td>Испания</td>
+            <td>Барселона</td>
+            <td>1025</td>
+            <td>1997</td>
+            <td>1,600,000</td>
+            <td>7.9</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Колизей Верона</td>
+            <td>Италия</td>
+            <td>Верона</td>
+            <td>30 н.э.</td>
+            <td>2000</td>
+            <td>1,300,000</td>
+            <td>7.8</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Гуггенхайм-музей</td>
+            <td>США</td>
+            <td>Нью-Йорк</td>
+            <td>1959</td>
+            <td>1992</td>
+            <td>2,300,000</td>
+            <td>7.7</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Красная площадь</td>
+            <td>Россия</td>
+            <td>Москва</td>
+            <td>15 в.</td>
+            <td>1990</td>
+            <td>4,800,000</td>
+            <td>7.6</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Статуя Христа Спасителя</td>
+            <td>Бразилия</td>
+            <td>Рио-де-Жанейро</td>
+            <td>1931</td>
+            <td>2007</td>
+            <td>1,800,000</td>
+            <td>8.4</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>Гранд-Каньон</td>
+            <td>США</td>
+            <td>Аризона</td>
+            <td>1919</td>
+            <td>1979</td>
+            <td>6,400,000</td>
+            <td>8.3</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>Парфенон</td>
+            <td>Греция</td>
+            <td>Афины</td>
+            <td>5 в. до н.э.</td>
+            <td>1987</td>
+            <td>2,800,000</td>
+            <td>8.2</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>Колизей</td>
+            <td>Италия</td>
+            <td>Рим</td>
+            <td>70 н.э.</td>
+            <td>1980</td>
+            <td>5,600,000</td>
+            <td>8.1</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Большой китайский мур</td>
+            <td>Китай</td>
+            <td>Разные</td>
+            <td>7 в. до н.э.</td>
+            <td>1987</td>
+            <td>10,200,000</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>Пирамиды Гизы</td>
+            <td>Египет</td>
+            <td>Гиза</td>
+            <td>26 в. до н.э.</td>
+            <td>1979</td>
+            <td>14,000,000</td>
+            <td>9.1</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>Статуя Свободы</td>
+            <td>США</td>
+            <td>Нью-Йорк</td>
+            <td>1886</td>
+            <td>1984</td>
+            <td>4,500,000</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>Акрополь Афинский</td>
+            <td>Греция</td>
+            <td>Афины</td>
+            <td>5 в. до н.э.</td>
+            <td>1987</td>
+            <td>3,000,000</td>
+            <td>8.9</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>Ватиканские музеи</td>
+            <td>Ватикан</td>
+            <td>Ватикан</td>
+            <td>16 в.</td>
+            <td>1984</td>
+            <td>6,500,000</td>
+            <td>8.8</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Сиднейская оперная театр</td>
+            <td>Австралия</td>
+            <td>Сидней</td>
+            <td>1973</td>
+            <td>2007</td>
+            <td>2,200,000</td>
+            <td>8.7</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>Мона Лиза</td>
+            <td>Франция</td>
+            <td>Париж</td>
+            <td>16 в.</td>
+            <td>1987</td>
+            <td>6,000,000</td>
+            <td>8.6</td>
+        </tr>
+    </table>
+</body>
+
+</html>
