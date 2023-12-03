@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+}
+
+.search {
+    background-color: grey;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    
+}
+
+.inner {
+    background-color: white;
+    width: 60%;
+    height: 25px;
+    display: inline-block;
+    margin: 1%;
+}
+.search img {
+    width: 25px;
+    margin: 1% 0;
+}
+
+.item {
+    margin: 0;
+    padding: 0;
+    width: 32%;
+    display: inline-block;
+}
+
+.item > img {
+    height: 40vh;
+}
+
+.menu {
+    background-color: lightgray;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    float: left;
+    padding-left: 10px;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+.menu-items {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.menu-item {
+    color: white;
+    background-color: grey;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px 10px;
+    width: 10%;
+    height: 6vh;
+}
+
+.menu-item:hover {
+    background-color: black;
+    height: 8vh;
+}
+
+.gallery {
+    width: 90%;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.item_1, .item_2, .item_3 {
+    border: solid thin gray;
+    overflow: hidden;
+    margin: 3%;
+}
+
+.item_1 > img {
+    
+    float: right;
+    width: 20%;
+    margin: 1% 0.5%;
+    height: 18vh;
+}
+
+.item_1 > h3 {
+    text-align: center;
+}
+
+.item_1 > p {
+    text-align: justify;
+}
+
+.item_1 p > a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.item_3 > img {
+    float: left;
+    width: 20%;
+    margin: 1% 0.5%;
+    height: 18vh;
+}
+.item_3 > h3 {
+    text-align: center;
+}
+
+.item_3 > p {
+    text-align: justify;
+}
+
+.item_3 p > a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.item_2 > h3 {
+    text-align: center;
+}
+
+.item_2 > p {
+    text-align: justify;
+}
+
+.item_2 p > a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.name {
+    width: 100%;
+    background-color: darkcyan;
+}
+.name p+p {
+    text-align: right;
+}
+
+footer > span {
+    float: right;
+}
+
+.topic{
+    height: 20vh;
+}
