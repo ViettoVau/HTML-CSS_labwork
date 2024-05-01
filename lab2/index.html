@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <h2>Калькулятор трапеции</h2>
+
+  <form id="myForm">
+    <input type="radio" id="type1" name="type" value="type1">
+    <label for="type1">Основание, боковые стороны и высота</label><br>
+    <input type="radio" id="type2" name="type" value="type2">
+    <label for="type2">Основание, высота и углы</label><br>
+    <button type="button" id="input_buttom" onclick="showInputs()">Показать</button>
+    <div>
+      <div id="inputs"></div>
+      <span id="error_massage" class="error"></span>
+    </div>
+
+    <select id="characteristics">
+      <option value="perimeter">Периметр</option>
+      <option value="diagonals">Диагонали</option>
+      <option value="area">Площадь</option>
+    </select>
+    <button type="button" onclick="calculate()">Вычислить</button>
+    <button type="button" onclick="clearInputs()">Очистить</button>
+  </form>
+
+
+  <p id="result"></p>
+
+
+  <script src="script.js">
+  </script>
+
+</body>
+
+</html>
