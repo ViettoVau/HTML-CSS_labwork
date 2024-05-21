@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://d3js.org/d3.v7.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Анимация (Задание 4)</title>
+</head>
+
+
+<body>
+    <div class="controller">
+        
+        <label>Скорость анимации
+            <input type="number" value="" step="1" id="speed" min="1">
+        </label>
+        <label>Частота синусоиды
+            <input type="number" value="" step="1" id="frequency">
+        </label>
+        <label>Вращение
+            <input type="checkbox" id="rotation" onchange="toggleRotationSpeed()">
+        </label>
+        <label>Скорость вращения
+            <select id="rotationSpeed">
+                <option value="slow">Низкая</option>
+                <option value="medium">Средняя</option>
+                <option value="fast">Высокая</option>
+            </select>
+        </label>
+        <button id="startButton">Запустить анимацию</button>
+        <button id="clear">Отчистить</button>
+
+    </div>
+    <span>
+
+    </span>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aefdc7a3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controller {
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.controller label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.controller input[type="number"],
+.controller select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.controller button {
+    padding: 10px 20px;
+    background-color: #26a149;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.controller button:hover {
+    background-color: #0056b3;
+}
+
+span {
+    width: 58%;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
